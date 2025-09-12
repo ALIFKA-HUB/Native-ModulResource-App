@@ -1,0 +1,84 @@
+/* login */
+
+/* Container login */
+#login-container {
+    width: 320px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+/* Judul login */
+.login-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Input */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Group form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Tombol umum */
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Error message */
+.error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+/* Dashboard */
+#dashboard-container {
+    width: 500px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin-bottom: 20px;
+    background: #eef;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#btn-logout {
+    width: auto;
+    background: #dc3545;
+}
+
+#btn-logout:hover {
+    background: #a71d2a;
+}
+
