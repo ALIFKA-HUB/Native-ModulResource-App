@@ -1,0 +1,100 @@
+/* ==== STICKY NAVBAR ==== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #FAF9F6;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Kontainer utama agar navbar tidak menempel ke pinggir */
+.navbar-container {
+  max-width: 1200px; /* lebar tengah */
+  margin: 0 auto;
+  padding: 18px 40px; /* jarak kanan kiri */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Efek saat scroll */
+.navbar.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== BODY ==== */
+body {
+  padding-top: 90px; /* supaya konten ga ketiban */
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ==== LOGO ==== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2A5A;
+}
+
+/* ==== MENU ==== */
+.nav-center {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-center li a {
+  text-decoration: none;
+  color: #1F2A5A;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-center li a:hover {
+  color: #2E9B4F;
+}
+
+/* ==== KANAN ==== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1F2A5A;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: #2E9B4F;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #22863a;
+  transform: scale(1.05);
+}

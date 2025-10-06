@@ -7,6 +7,10 @@ if (!isset($_SESSION['user_id'])) {
 
 $role = $_SESSION['role'];
 ?>
+<?php
+include 'template/header.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -39,3 +43,7 @@ $role = $_SESSION['role'];
 </body>
 
 </html>
+
+<?php
+include 'template/footer.php';
+?>

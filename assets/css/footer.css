@@ -1,0 +1,67 @@
+/* === Footer Style === */
+.footer {
+  background-color: #FAF9F6;
+  padding: 50px 80px 20px;
+  border-top: 1px solid #e5e5e5;
+  color: #1F2A5A;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #1F2A5A;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #2E9B4F;
+}
+
+/* Icon Sosial */
+.footer-column ul li img {
+  width: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Tombol App */
+.app-btn {
+  width: 140px;
+  margin-top: 8px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.app-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer bawah */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
