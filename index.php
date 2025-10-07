@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 $page_css = "index.css";
 include "template/header.php";
 include "template/navigation-public.php";
@@ -82,7 +85,7 @@ include "template/navigation-public.php";
             <p>Dipercaya oleh guru dan siswa dari berbagai sekolah di Indonesia.</p>
         </div>
         <div class="why-item">
-            <img src="assets/image/easy.png" alt="Mudah Digunakan">
+            <img src="assets/image/easy1.png" alt="Mudah Digunakan">
             <h3>Mudah Digunakan</h3>
             <p>Tampilan sederhana dan navigasi yang intuitif untuk semua pengguna.</p>
         </div>

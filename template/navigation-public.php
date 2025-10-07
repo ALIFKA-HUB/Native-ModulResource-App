@@ -16,11 +16,11 @@
       <span>ModulResource</span>
     </div>
 
-    <ul class="nav-center">
+    <!-- <ul class="nav-center">
       <li><a href="#">Beranda</a></li>
       <li><a href="#">Fitur</a></li>
       <li><a href="#">Tentang</a></li>
-    </ul>
+    </ul> -->
 
     <div class="nav-right">
       <a href="auth/login.php" class="nav-link">Masuk</a>

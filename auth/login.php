@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (isset($_SESSION['user_id'])) {
   header("Location: ../dashboard.php");
   exit;
@@ -15,7 +18,12 @@ if (isset($_SESSION['user_id'])) {
   <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 
-<body>
+<body style="background: linear-gradient(120deg, #2bca92ff, #062870ff); 
+             min-height: 100vh; 
+             display: flex; 
+             justify-content: center; 
+             align-items: center; 
+             font-family: 'Segoe UI', Arial, sans-serif;">
   <div class="login-wrapper">
 
     <!-- Bagian kiri -->
