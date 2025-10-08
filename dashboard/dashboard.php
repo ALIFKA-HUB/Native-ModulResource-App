@@ -1,6 +1,6 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
 
 if (!isset($_SESSION['user_id'])) {
@@ -12,31 +12,46 @@ $nama = $_SESSION['nama'] ?? 'Pengguna';
 $role = $_SESSION['role'] ?? 'siswa';
 
 include '../template/navigation-private.php';
-include '../template/header.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard - ModulResource</title>
+  <title>ModulResource</title>
   <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="css/sidebar.css">
 </head>
+
 <body>
-<div class="dashboard-container">
-  <?php include 'sidebar.php'; ?>
 
-  <main class="main-content">
-    <h2>Hai, <?php echo htmlspecialchars($nama); ?>!</h2>
+  <!-- Sidebar di atas semua elemen -->
+  <?php include '../template/sidebar.php'; ?>
 
-    <?php if ($role == 'admin'): ?>
-      <p>Selamat datang di dashboard Admin.</p>
-    <?php elseif ($role == 'guru'): ?>
-      <p>Selamat datang di dashboard Guru.</p>
-    <?php else: ?>
-      <p>Selamat datang di dashboard Siswa.</p>
-    <?php endif; ?>
-  </main>
-</div>
+  <div class="dashboard-container">
+    <main class="main-content">
+      <?php
+      if ($role === 'admin') {
+        include 'admin-dashboard.php';
+      } elseif ($role === 'guru') {
+        include 'guru-dashboard.php';
+      } else {
+        include 'siswa-dashboard.php';
+      }
+      ?>
+    </main>
+  </div>
+
 </body>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </html>

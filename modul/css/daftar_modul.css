@@ -1,0 +1,179 @@
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f5faff, #ffffff, #f2fff6);
+      color: #1F2A5A;
+      padding: 50px 80px;
+      min-height: 100vh;
+      margin-left: 240px;
+      margin-top: 50px;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #1F2A5A;
+      margin-bottom: 40px;
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .filter-bar form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .filter-bar input,
+    .filter-bar select {
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      width: 220px;
+      transition: 0.3s;
+    }
+
+    .filter-bar input:focus,
+    .filter-bar select:focus {
+      border-color: #2E9B4F;
+      outline: none;
+      box-shadow: 0 0 5px rgba(46,155,79,0.3);
+    }
+
+    .btn-filter {
+      background-color: #2E9B4F;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-filter:hover {
+      background-color: #22863a;
+      transform: scale(1.05);
+    }
+
+    /* Card Grid */
+    .modul-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .modul-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .modul-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .modul-card h3 {
+      color: #1F2A5A;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .modul-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+      margin: 4px 0;
+    }
+
+    .modul-card .mapel {
+      color: #2E9B4F;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .modul-card .btn-detail {
+      margin-top: 15px;
+      text-decoration: none;
+      text-align: center;
+      background-color: #2E9B4F;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .modul-card .btn-detail:hover {
+      background-color: #22863a;
+      transform: scale(1.05);
+    }
+
+    .no-data {
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 20px;
+      }
+      .filter-bar {
+        padding: 15px;
+      }
+      .filter-bar form {
+        flex-direction: column;
+      }
+    }
+
+    .harga {
+      font-weight: 600;
+      color: #1F2A5A;
+      margin-top: 10px;
+    }
+
+    .harga .gratis {
+      color: #2E9B4F;
+    }
+
+    .btn-beli {
+      margin-top: 15px;
+      text-decoration: none;
+      text-align: center;
+      background-color: #1F2A5A;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-beli:hover {
+      background-color: #27386D;
+      transform: scale(1.05);
+    }

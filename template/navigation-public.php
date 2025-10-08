@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ModulResource</title>
-  <link rel="stylesheet" href="/NATIVE-MODULRESOURCE-APP/assets/css/navigation-public.css">
+  <link rel="stylesheet" href="/Native-ModulResource-App/assets/css/navigation-public.css">
 </head>
 
 <body>

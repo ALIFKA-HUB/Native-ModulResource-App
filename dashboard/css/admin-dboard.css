@@ -1,0 +1,63 @@
+  .main-content {
+    margin-top: 70px;
+    background: #f8f9fc;
+    min-height: calc(100vh - 80px);
+  }
+
+  .welcome-section h2 {
+    color: #1F2A5A;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .welcome-section p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+  }
+
+  .stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stat-card h3 {
+    font-size: 40px;
+    color: #2E9B4F;
+    margin-bottom: 8px;
+  }
+
+  .stat-card p {
+    color: #1F2A5A;
+    font-weight: 600;
+  }
+
+  .guru {
+    border-left: 6px solid #1E90FF;
+  }
+
+  .siswa {
+    border-left: 6px solid #FF8C00;
+  }
+
+  .modul {
+    border-left: 6px solid #2E9B4F;
+  }
+
+  .transaksi {
+    border-left: 6px solid #8A2BE2;
+  }

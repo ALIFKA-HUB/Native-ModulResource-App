@@ -1,0 +1,132 @@
+    /* ==== BACKGROUND STYLE ala landing page ==== */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #eaf4ff 0%, #ffffff 40%, #f3fff5 100%);
+      color: #1F2A5A;
+    }
+
+    .detail-container {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 60px 70px;
+      width: 850px;
+      max-width: 95%;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .detail-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .detail-header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #1F2A5A;
+      margin-bottom: 8px;
+    }
+
+    .detail-header .mapel {
+      color: #2E9B4F;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .detail-header .guru {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .detail-body .deskripsi {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      background: #FAF9F6;
+      padding: 18px 22px;
+      border-radius: 8px;
+      border-left: 5px solid #2E9B4F;
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #f5fff9, #eafbee);
+      border-left: 5px solid #2E9B4F;
+      padding: 18px 22px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .info-box p {
+      margin: 6px 0;
+      font-weight: 500;
+      color: #1F2A5A;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background-color: #2E9B4F;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-download:hover {
+      background-color: #22863a;
+      transform: scale(1.05);
+    }
+
+    .note {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .back-link {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #1F2A5A;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-link a:hover {
+      color: #2E9B4F;
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .detail-container {
+        padding: 40px 30px;
+      }
+
+      .detail-header h1 {
+        font-size: 28px;
+      }
+    }

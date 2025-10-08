@@ -13,13 +13,14 @@
 
 /* Kontainer utama agar navbar tidak menempel ke pinggir */
 .navbar-container {
-  max-width: 1200px; /* lebar tengah */
-  margin: 0 auto;
-  padding: 18px 40px; /* jarak kanan kiri */
+  max-width: 100%;
+  margin: 0;
+  padding: 14px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 /* Efek saat scroll */
 .navbar.scrolled {

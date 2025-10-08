@@ -1,0 +1,84 @@
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #1F2A5A;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1500px; /* diperbesar dari 900px */
+      margin: 100px 50px 50px 280px; /* sesuaikan margin kiri agar pas dengan sidebar */
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 50px 50px; /* padding lebih lebar biar isi tidak terlalu mepet */
+    }
+
+
+    h1 {
+      text-align: center;
+      color: #1F2A5A;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #ddd;
+      padding: 14px 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f6fa;
+      color: #1F2A5A;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .no-data {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #2E9B4F;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #22863a;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      display: block;
+      text-align: right;
+      margin-top: 25px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #1F2A5A;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-link a:hover {
+      color: #2E9B4F;
+    }

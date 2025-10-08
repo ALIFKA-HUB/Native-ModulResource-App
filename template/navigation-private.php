@@ -1,6 +1,6 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
 
 if (!isset($_SESSION['user_id'])) {
@@ -20,7 +20,7 @@ $role_pengguna = isset($_SESSION['role']) ? $_SESSION['role'] : 'guest';
 <head>
   <meta charset="UTF-8">
   <title>Dashboard - ModulResource</title>
-  <link rel="stylesheet" href="/Native-ModulResource-App/assets/css/navigation-private.css">
+  <link rel="stylesheet" href="/Native-ModulResource-APP/assets/css/navigation-private.css">
 </head>
 
 <body>
@@ -43,11 +43,23 @@ $role_pengguna = isset($_SESSION['role']) ? $_SESSION['role'] : 'guest';
       <!-- kanan -->
       <div class="nav-right">
         <div class="user-info">
-          <img src="/Native-ModulResource-App/assets/image/student-icon.png" alt="User" class="user-icon">
-          <span>Hai, <?php echo htmlspecialchars($nama_pengguna); ?> <?php echo ucfirst($role_pengguna); ?>!</span>
+          <?php
+          // Tentukan ikon sesuai role
+          if ($role_pengguna === 'guru') {
+            $user_icon = '/Native-ModulResource-App/assets/image/teacher-icon.png';
+          } elseif ($role_pengguna === 'admin') {
+            $user_icon = '/Native-ModulResource-App/assets/image/admin.png';
+          } else {
+            $user_icon = '/Native-ModulResource-App/assets/image/student-icon.png';
+          }
+          ?>
+
+          <img src="<?php echo $user_icon; ?>" alt="User" class="user-icon">
+          <span>Hai, <?php echo htmlspecialchars($nama_pengguna); ?>! (<?php echo ucfirst($role_pengguna); ?>)</span>
         </div>
         <a href="/Native-ModulResource-App/auth/logout.php" class="btn-logout">Logout</a>
       </div>
+
 
     </div>
   </nav>

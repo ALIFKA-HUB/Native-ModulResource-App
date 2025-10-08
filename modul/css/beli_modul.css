@@ -1,0 +1,62 @@
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1F2A5A, #2E9B4F);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .buy-container {
+      background: #fff;
+      padding: 40px 60px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 450px;
+    }
+
+    h1 {
+      color: #1F2A5A;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #2E9B4F;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background-color: #2E9B4F;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #22863a;
+      transform: scale(1.05);
+    }
+
+    .cancel {
+      display: inline-block;
+      margin-top: 15px;
+      color: #1F2A5A;
+      text-decoration: none;
+      font-weight: 600;
+    }
