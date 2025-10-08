@@ -78,7 +78,7 @@ $result_rekomendasi = mysqli_query($conn, $query_rekomendasi);
         <div class="icon">📥</div>
         <h4>Riwayat Unduhan</h4>
         <p>Lihat kembali semua modul yang pernah kamu unduh dari sistem.</p>
-        <a href="../modul/riwayat_download.php" class="btn-small">Lihat</a>
+        <a href="../transaksi/riwayat_download.php" class="btn-small">Lihat</a>
       </div>
 
       <div class="feature-card">
